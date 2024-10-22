@@ -32,7 +32,7 @@ export const Navbar = () => {
           <IoIosMenu className={styles.menuIcon} onClick={toggleMenu} />
         )}
         <ul className={`${styles.menuItems} ${menuOpen ? styles.active : ''}`}>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
