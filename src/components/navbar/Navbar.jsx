@@ -33,8 +33,7 @@ export const Navbar = () => {
         )}
         <ul className={`${styles.menuItems} ${menuOpen ? styles.active : ''}`}>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
     </nav>
