@@ -1,61 +1,127 @@
-@import "../../vars.css"; 
+@import "../../vars.css";
 
-.Hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  background-color: var(--primary-color); 
-  background-size: cover;
-  background-position: center;
-  color: var(--primary-color); 
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    margin-left: 10%;
+    color: var(--paragraph-color);
+    font-weight: 900;
+}
 
 .title {
-  font-size: 3rem;
-  color: var(--highlight-color); 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: var(--highlight-color); 
-  margin-top: 10px;
-  z-index: 2;
-}
-
-.ctaButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: var(--accent-color); 
-  color: var(--highlight-color);
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  transition: background-color 0.3s ease;
-}
-
-.ctaButton:hover {
-  background-color: var(--primary-color); 
-}
-
-@media screen and (max-width: 768px) {
-  .title {
     font-size: 2.5rem;
-  }
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 33px;
+    font-family: var(--font-family-robot);
+    background: linear-gradient(90deg, var(--cta-background-color) 0%, var(--button-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--cta-background-color);
+}
 
-  .subtitle {
-    font-size: 1.2rem;
-  }
+.description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--paragraph-dark-color);
+    margin-bottom: 33px;
+    font-family: var(--font-family-robot);
+}
 
-  .ctaButton {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
+.contactButton {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--highlight-text-color);
+    background-color: var(--cta-background-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: var(--font-family-robot);
+    padding: 17px 26px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.heroIMG {
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottomBlur {
+    position: absolute;
+    width: 30vw;
+    height: 40vw;
+    min-width: 330px;
+    bottom: -128px;
+    right: 10vw;
+    border: 764px;
+    background: rgb(255,255,255);
+    filter: blur(100px);
+    z-index: -1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse; 
+        align-items: center; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .content {
+        width: 100%; 
+        align-items: center; 
+        margin-left: 0; 
+        margin-right: 0; 
+        text-align: center;
+        
+    }
+
+    .title {
+        font-size: 2rem; 
+        margin-bottom: 20px; 
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 20px; 
+    }
+
+    .heroIMG {
+        width: 80%; 
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    .contactButton {
+        font-size: 1.2rem; /* Diminui o tamanho da fonte do botão */
+        padding: 10px 15px; /* Ajusta o padding */
+    }
+
+    .bottomBlur {
+        width: 50vw; /* Ajusta a largura do blur */
+        height: 30vw; /* Ajusta a altura do blur */
+        min-width: 280px; /* Ajusta a largura mínima */
+        bottom: -80px; /* Ajusta a posição inferior */
+        right: 5vw; /* Ajusta a posição à direita */
+    }
 }

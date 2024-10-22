@@ -11,7 +11,14 @@
     /* Cores de texto para a landing page */
     --heading-color: #4a5648; /* Cor dos títulos */
     --paragraph-color: #6b755e; /* Cor dos parágrafos */
+    /*paragrafos com tom mais escuro */
+    --paragraph-dark-color: #48543f; /* Cor dos parágrafos com tom mais escuro */
     --text-light-color: #87968a; /* Cor para textos leves, subtítulos */
     --highlight-text-color: #ffffff; /* Cor do texto em botões ou áreas destacadas */
     --cta-text-color: #48543f; /* Cor de texto para Call to Action (CTA) */
+    --cta-background-color: #99a599; /* Cor de fundo para Call to Action (CTA) */
+    --cta-hover-color: #ffffff; /* Cor de texto para Call to Action (CTA) ao passar o mouse */
+
+    /*fontes */
+    --font-family-robot: 'Roboto', sans-serif;
 }
