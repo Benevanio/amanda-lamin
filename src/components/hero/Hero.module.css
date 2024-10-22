@@ -1,0 +1,61 @@
+@import "../../vars.css"; 
+
+.Hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--primary-color); 
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-color); 
+}
+
+
+.title {
+  font-size: 3rem;
+  color: var(--highlight-color); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--highlight-color); 
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.ctaButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--accent-color); 
+  color: var(--highlight-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--primary-color); 
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}

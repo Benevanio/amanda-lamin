@@ -1,0 +1,17 @@
+:root {
+    --background-color: #dce0db; /* Fundo geral */
+    --primary-color: #4a5648; /* Cor do texto principal */
+    --accent-color: #6b755e; /* Verde-acinzentado usado nos detalhes */
+    --highlight-color: #ffffff; /* Branco para áreas de destaque */
+    --button-color: #99a599; /* Cor de botões ou interações */
+    --secondary-text-color: #87968a; /* Cinza usado em textos menores */
+    --border-color: #c0c5c2; /* Borda suave */
+    --link-color: #48543f; /* Cor do texto do link */
+
+    /* Cores de texto para a landing page */
+    --heading-color: #4a5648; /* Cor dos títulos */
+    --paragraph-color: #6b755e; /* Cor dos parágrafos */
+    --text-light-color: #87968a; /* Cor para textos leves, subtítulos */
+    --highlight-text-color: #ffffff; /* Cor do texto em botões ou áreas destacadas */
+    --cta-text-color: #48543f; /* Cor de texto para Call to Action (CTA) */
+}

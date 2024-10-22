@@ -1,0 +1,102 @@
+@import "../../vars.css";
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuIcon {
+  font-size: larger;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-right: 1rem; 
+}
+
+.menuItems {
+  display: flex;
+  list-style: none;
+  gap: 47px;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+}
+
+.menuItems a:hover {
+  color: var(--accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuIcon {
+    display: block; 
+    width: 40px;
+    height: 40px;
+  }
+
+  .menuItems {
+    display: none; 
+    flex-direction: column;
+    gap: 11px;
+    background-color: var(--highlight-color);
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+    padding: 24px 33px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menuItems.active {
+    display: flex; /* Mostrar os itens do menu quando ativo */
+  }
+
+  .menuItems a {
+    font-size: 1rem;
+  }
+}
