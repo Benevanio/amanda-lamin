@@ -1,0 +1,85 @@
+@import "../../vars.css";
+
+.aboutContainer {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 30%; /* Ajusta para três cards em uma linha */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.card p,
+.card ul {
+  color: var(--paragraph-color);
+}
+
+/* Tamanhos e cores dos ícones */
+.icon {
+  font-size: 2rem; /* Tamanho inicial dos ícones */
+  color: var(--primary-color); /* Altere para a cor desejada */
+  transition: color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+/* Efeito hover para os ícones */
+.icon:hover {
+  color: var(--hover-color); /* Cor ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .card {
+    flex: 1 1 45%; /* Ajusta para dois cards em uma linha em telas menores */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título em telas menores */
+  }
+  
+  .card {
+    flex: 1 1 100%; /* Um card por linha em telas muito pequenas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutContainer {
+    margin: 10px; /* Reduz a margem em telas muito pequenas */
+    padding: 15px; /* Reduz o padding em telas muito pequenas */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Diminui ainda mais o tamanho do título */
+  }
+
+  .card {
+    padding: 15px; /* Reduz o padding dos cards */
+  }
+}
