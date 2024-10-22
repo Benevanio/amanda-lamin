@@ -2,7 +2,7 @@ import React from 'react';
 import { FaInstagram } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
 import { MdMarkEmailUnread } from "react-icons/md";
-import Styles from './About.module.css'; // Importar o CSS correspondente
+import Styles from './about.module.css'; // Importar o CSS correspondente
 
 export const About = () => { 
   return (
