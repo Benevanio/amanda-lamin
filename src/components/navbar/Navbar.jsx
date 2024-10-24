@@ -26,7 +26,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.Navbar}>
-      <img src={getImagURL('logo.png')} alt="menu" className={styles.logo} />
+      <img src={getImagURL('logo.jpg')} alt="menu" className={styles.logo} />
       <div className={styles.menu}>
         {isMobile && ( 
           <IoIosMenu className={styles.menuIcon} onClick={toggleMenu} />

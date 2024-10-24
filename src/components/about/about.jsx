@@ -11,7 +11,7 @@ export const About = () => {
         <div className={Styles.card}>
           <h3>Serviços Oferecidos</h3>
           <p>
-            Sou psicanalista, oferecendo atendimentos individuais e rodas de conversas para empresas sobre saúde mental.
+          Sou psicanalista, oferecendo atendimentos individuais  online.
           </p>
           <p><strong>Benefícios do Atendimento Online:</strong></p>
           <ul>
@@ -22,7 +22,7 @@ export const About = () => {
           </ul>
         </div>
 
-        {/* Card de Formação */}
+
         <div className={Styles.card}>
           <h3>Formação</h3>
           <p>

@@ -10,9 +10,7 @@ export const Hero = () => {
           Bem-vindo ao Meu Consultório Virtual
         </h1>
         <p className={Styles.description}>
-          Sou Amanda Lamin, psicanalista especializada em atendimentos individuais e
-          rodas de conversa voltadas para empresas.
-          Meu objetivo é promover a saúde mental e o bem-estar emocional de cada pessoa.
+        Sou Amanda Mazzuchetti Lamim, psicóloga e psicanalista em formação, especializada em atendimentos individuais. Acredito no poder do autoconhecimento e na transformação que a terapia pode trazer. Meu objetivo é ajudá-lo(a) a descobrir novas perspectivas e viver com mais segurança e autenticidade. Vamos juntos nessa jornada!
         </p>
         
         <a 
