@@ -33,7 +33,7 @@ export const About = () => {
         </div>
         <div className={Styles.card}>
           <h3>Marque uma Consulta</h3>
-          <p>Agende uma consulta ou palestra sobre saúde mental diretamente comigo!</p>
+          <p>Agende uma consulta  sobre saúde mental diretamente comigo!</p>
         </div>
       </div>
     </section>
